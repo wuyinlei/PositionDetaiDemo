@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.android.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff">
+
+
+        <com.android.pulltorefresh.PullableGridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:horizontalSpacing="1dp"
+            android:numColumns="3"
+
+            android:verticalSpacing="1dp" />
+
+
+    </com.android.pulltorefresh.PullToRefreshLayout>
+
+
+    <!--<GridView-->
+    <!--android:id="@+id/gv_gridview_person"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+
+
+    <!--android:numColumns="3"-->
+    <!--android:verticalSpacing="1dp"></GridView>-->
+
+
+    <RelativeLayout
+        android:id="@+id/rl_empt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/iv_piv_my"
+            android:layout_width="81dp"
+            android:layout_height="53dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:src="@mipmap/my_pic" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_piv_my"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Ta还没有发表过作品"
+            android:textColor="#b4b4b4"
+            android:textSize="13sp"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="61dp"
+            android:src="@mipmap/greatchef" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_self_empt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/iv_unpic_my"
+            android:layout_width="191dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:src="@mipmap/my_unpic" />
+
+
+        <TextView
+            android:id="@+id/tv_no_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_unpic_my"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="您还未发布任何作品，"
+            android:textColor="#b4b4b4"
+            android:textSize="13sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_no_work"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="以厨会友，赶紧晒出你的拿手菜"
+            android:textColor="#b4b4b4"
+            android:textSize="13sp"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="61dp"
+            android:src="@mipmap/greatchef" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:descendantFocusability="blocksDescendants"
+             android:orientation="vertical">
+
+
+    <com.android.camera.camera.view.CameraContainer
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <include layout="@layout/head_view"/>
+    <include
+        android:id="@+id/camera_bottom_bar"
+        layout="@layout/camera_bottom_bar"
+        />
+
+</FrameLayout>

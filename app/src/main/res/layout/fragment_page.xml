@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="33"
+        tools:listitem="@layout/hot_position_item_layout"
+        android:background="#e4e4e4"/>
+
+    <Button
+        android:id="@+id/ask_release"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_gravity="bottom"
+        android:background="@color/main_yellow"
+        android:text="提问"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:visibility="visible"/>
+
+</LinearLayout>

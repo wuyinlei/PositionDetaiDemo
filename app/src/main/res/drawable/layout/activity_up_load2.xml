@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="cn.com.greatchef.activity.UpLoad2Activity">
+
+    <include
+        android:id="@+id/upload2_headview"
+        layout="@layout/head_view" />
+    <!--cn.com.greatchef.customview.MainScrollView-->
+    <cn.com.greatchef.customview.MainScrollView
+        android:id="@+id/upload2_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upload2_next"
+        android:layout_below="@+id/upload2_headview"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/upload2_headimg"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:background="@mipmap/photo_next2_top" />
+
+            <RelativeLayout
+                android:id="@+id/upload2_use_view"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/upload2_headimg">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="19dp"
+                    android:background="@mipmap/fooddetails_materials" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="49dp"
+                    android:gravity="center"
+                    android:text="@string/upload2_main"
+                    android:textColor="#303030"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+            <cn.com.greatchef.customview.MyListView
+                android:id="@+id/upload2_uselist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upload2_use_view"
+                android:divider="@null"
+                android:footerDividersEnabled="false">
+
+            </cn.com.greatchef.customview.MyListView>
+
+            <View
+                android:id="@+id/upload2_view"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/upload2_uselist"
+                android:background="#efefef" />
+            <!--<Button-->
+            <!--android:id="@+id/upload2_adduse"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/upload2_uselist"-->
+            <!--android:text="添加用料" />-->
+            <RelativeLayout
+                android:id="@+id/upload2_use_view2"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/upload2_view">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="23dp"
+                    android:background="@mipmap/fooddetails_accessories" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="49dp"
+                    android:gravity="center"
+                    android:text="@string/upload2_acc"
+                    android:textColor="#303030"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <cn.com.greatchef.customview.MyListView
+                android:id="@+id/upload2_use2list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upload2_use_view2"
+                android:divider="@null"
+                android:footerDividersEnabled="false">
+
+            </cn.com.greatchef.customview.MyListView>
+
+            <View
+                android:id="@+id/upload2_view2"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/upload2_use2list"
+                android:background="#efefef" />
+
+            <RelativeLayout
+                android:id="@+id/upload2_use_view3"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/upload2_view2">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:background="@mipmap/fooddetails_seasoning" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="49dp"
+                    android:gravity="center"
+                    android:text="@string/upload2_tiaoliao"
+                    android:textColor="#303030"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <cn.com.greatchef.customview.MyListView
+                android:id="@+id/upload2_use3list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upload2_use_view3"
+                android:divider="@null"
+                android:footerDividersEnabled="false">
+
+            </cn.com.greatchef.customview.MyListView>
+
+            <View
+                android:id="@+id/upload2_view3"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/upload2_use3list"
+                android:background="#efefef" />
+
+            <RelativeLayout
+                android:id="@+id/upload2_lin2"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/upload2_view3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="19dp"
+                    android:background="@mipmap/icon_step" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="49dp"
+                    android:gravity="center"
+                    android:text="@string/upload2_write_f"
+                    android:textColor="#303030"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <cn.com.greatchef.customview.MyListView
+                android:id="@+id/upload2_contentlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/upload2_lin2"
+                android:divider="@null"
+                android:footerDividersEnabled="false">
+
+            </cn.com.greatchef.customview.MyListView>
+
+        </RelativeLayout>
+    </cn.com.greatchef.customview.MainScrollView>
+
+    <Button
+        android:id="@+id/upload2_next"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ad8748"
+        android:text="@string/upload_next2"
+        android:textColor="@color/regist_next_selector"
+        android:textSize="15sp" />
+</RelativeLayout>

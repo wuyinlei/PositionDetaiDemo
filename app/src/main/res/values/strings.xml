@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">QuestionAnswerDemo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="me_test">热爱编程的小白，CSDN地址：http://blog.csdn.net/wuyinlei
+GitHub地址：https://github.com/wuyinlei，欢迎访问和fork</string>
+
+    <string name="attention_and_answer">%1$s关注·%2$s回答</string>
+    <string name="zan_past">赞过啦~</string>
+    <string name="reply">回复</string>
+    <string name="problems">发表评论</string>
+    <string name="submit">提交</string>
+    <string name="send">发送</string>
+    <string name="myeditor_open_dissmiss">取消</string>
+
+</resources>

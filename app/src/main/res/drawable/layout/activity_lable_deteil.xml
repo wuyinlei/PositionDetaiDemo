@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--这个自定义布局，可以通过检测手势，判断是上拉还是下拉，然后将结果告诉listener-->
+        <com.android.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="47dp"
+            android:background="#ffffff">
+
+
+            <com.android.pulltorefresh.PullableGridView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:horizontalSpacing="1dp"
+                android:numColumns="3"
+
+                android:verticalSpacing="1dp" />
+
+
+        </com.android.pulltorefresh.PullToRefreshLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+
+            android:background="#fcfcfc">
+
+            <RelativeLayout
+                android:id="@+id/rl_back"
+                android:layout_width="80dp"
+                android:layout_height="46dp"
+                android:background="#fcfcfc">
+
+                <TextView
+                    android:id="@+id/tv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="#fcfcfc"
+                    android:text="@string/back"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="17dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:src="@mipmap/head_back" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_lable_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="#西蓝花"
+
+
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

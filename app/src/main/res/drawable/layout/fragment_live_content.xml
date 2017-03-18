@@ -1,0 +1,293 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.com.greatchef.fragment.LiveContentFragment">
+    <!-- TODO: Update blank fragment layout -->
+
+    <cn.com.greatchef.customview.MainNestScroll
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/live_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/live_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="26dp"
+                android:layout_marginTop="26dp"
+                android:text=""
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:background="#efefef"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="11dp"
+                    android:background="@mipmap/live_time" />
+
+                <TextView
+                    android:id="@+id/live_time_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="#4a4a4a"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/live_time_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:text=""
+                    android:textColor="#4a4a4a"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#4a4a4a"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/live_time_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    android:textColor="#4a4a4a"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/live_time_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="14dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#9b9b9b"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#efefef" />
+
+
+            <RelativeLayout
+                android:layout_height="46dp"
+                android:layout_width="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="11dp"
+                    android:background="@mipmap/live_people" />
+
+                <TextView
+                    android:id="@+id/live_4_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="41dp"
+                    android:text=""
+                    android:textColor="#4a4a4a"
+                    android:textSize="15sp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/live_sign_headview"
+                    android:layout_width="match_parent"
+                    android:layout_height="45.7dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:layout_marginRight="14dp"
+                    >
+
+                    <View
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="318dp"
+                        android:background="@drawable/shape_emotion_wight" />
+
+                    <cn.com.greatchef.customview.CircleImageView
+                        android:id="@+id/rv_iv3"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="319dp" />
+
+                    <View
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="300dp"
+                        android:background="@drawable/shape_emotion_wight" />
+
+                    <cn.com.greatchef.customview.CircleImageView
+                        android:id="@+id/rv_iv2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="301dp"
+                         />
+
+                    <View
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="282dp"
+                        android:background="@drawable/shape_emotion_wight" />
+
+                    <cn.com.greatchef.customview.CircleImageView
+                        android:id="@+id/rv_iv1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="283dp"
+                        />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#efefef" />
+
+            <RelativeLayout
+                android:id="@+id/live_person"
+                android:layout_width="match_parent"
+                android:layout_height="62dp">
+
+                <cn.com.greatchef.customview.CircleImageView
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:id="@+id/live_headimage"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@+id/live_headimage"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/live_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/live_unit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:layout_marginRight="35dp"
+                        android:text=""
+                        android:textColor="#b4b4b4"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:background="@mipmap/live_jiantou"
+                    android:textColor="#d8d8d8" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#efefef" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <WebView
+                    android:id="@+id/live_content_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"></WebView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginBottom="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="450dp"
+                    android:layout_marginTop="55dp"
+                    android:background="@mipmap/greatchef" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </cn.com.greatchef.customview.MainNestScroll>
+
+
+</RelativeLayout>

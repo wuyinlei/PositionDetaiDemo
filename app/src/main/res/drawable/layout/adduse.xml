@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adduse_001"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/adduse_001_1"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@mipmap/icon_add"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/adduse_001_1"
+            android:text="@string/myeditor_add_exp"
+            android:textColor="#ad8748"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

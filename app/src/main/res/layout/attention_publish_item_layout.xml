@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/view_blank"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+
+        android:layout_alignParentTop="true"/>
+
+    <com.mingchu.positiondetaidemo.CircleImageView
+        android:id="@+id/iv_comment_head"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_below="@id/view_blank"
+        android:layout_marginLeft="12dp"
+        android:src="@mipmap/login_logo_hdpi"/>
+
+    <TextView
+        android:id="@+id/tv_comment_person"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/view_blank"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/iv_comment_head"
+        android:ellipsize="end"
+        android:maxEms="8"
+        android:singleLine="true"
+        android:text="谢鹏碰"
+        android:textColor="#212121"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_shu"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_below="@id/view_blank"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tv_comment_person"
+        android:text="|"
+        android:textColor="#9b9b9b"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_comment_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_blank"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/tv_shu"
+        android:text="甜品师"
+        android:textColor="#9b9b9b"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_unit"
+
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@id/iv_comment_head"
+        android:ellipsize="end"
+        android:maxEms="8"
+        android:singleLine="true"
+        android:text="湖南京京办副厨师长"
+        android:textColor="#b4b4b4"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/detail_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_unit"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/iv_comment_head"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="#名厨问答 打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,"
+        android:textColor="#000"
+        android:textSize="16sp"/>
+
+    <RelativeLayout
+        android:id="@+id/re_produce"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/detail_text"
+        android:layout_alignStart="@+id/detail_text"
+        android:layout_below="@+id/detail_text">
+
+        <ImageView
+            android:id="@+id/food_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/food_img"
+            android:textColor="#000"
+            android:textSize="16sp"
+            tools:text="紫苏三文鱼"/>
+
+        <TextView
+            android:id="@+id/food_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/food_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/food_img"
+            tools:text="刘文忠"/>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/template_comment_approval_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/re_produce"
+        android:layout_toRightOf="@+id/iv_comment_head"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#f3f3f3"
+    tools:context="cn.com.greatchef.activity.SetingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/head_view"/>
+
+        <RelativeLayout
+            android:id="@+id/seting_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21dp"
+                android:text="@string/setting_feedback"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="21dp"
+                android:background="@mipmap/my_item_go"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="21dp"
+                android:background="#efefef"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/seting_contact"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21dp"
+                android:text="@string/setting_con_us"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="21dp"
+                android:background="@mipmap/my_item_go"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="21dp"
+                android:background="#efefef"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/seting_about"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21dp"
+                android:text="@string/setting_4_us"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="21dp"
+                android:background="@mipmap/my_item_go"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="#f3f3f3"/>
+
+        <RelativeLayout
+            android:id="@+id/seting_change"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21dp"
+                android:text="@string/page_change_passwd"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="21dp"
+                android:background="@mipmap/my_item_go"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="21dp"
+                android:background="#efefef"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/seting_clear"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21dp"
+                android:text="@string/setting_4_clear"
+                android:textColor="@color/black"/>
+
+            <ImageView
+
+                android:layout_width="8dp"
+                android:layout_height="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="21dp"
+                android:background="@mipmap/my_item_go"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <!--<TextView-->
+    <!--android:textColor="@color/regist_next_selector"-->
+    <!--android:text="@string/setting_quit_login"-->
+    <!--android:id="@+id/seting_quit"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="44dp"-->
+    <!--android:layout_marginBottom="45dp"-->
+    <!--android:layout_marginLeft="21dp"-->
+    <!--android:layout_marginRight="21dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@drawable/rect_yellow"-->
+    <!--android:gravity="center"-->
+    <!--android:textSize="15sp"/>-->
+    <TextView
+        android:id="@+id/seting_quit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/setting_quit_login"
+        android:textColor="@color/main_yellow"
+        android:textSize="15sp"/>
+    <!--<View-->
+    <!--android:background="@mipmap/greatchef"-->
+    <!--android:layout_marginLeft="130dp"-->
+    <!--android:layout_marginRight="130dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="11dp"/>-->
+</RelativeLayout>

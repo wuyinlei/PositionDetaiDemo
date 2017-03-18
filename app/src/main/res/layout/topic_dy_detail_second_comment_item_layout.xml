@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:background="#f4f4f4"
+                android:orientation="vertical">
+
+    <TextView
+        android:lineSpacingExtra="5dp"
+        tools:text="长这么大居然是第一次看科幻小说，描写的看似是未来的北京，其实是当下的中国——社会阶层的差异造成人与人之间的隔阂，一流社会的光鲜亮丽和三流社会的辛苦"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

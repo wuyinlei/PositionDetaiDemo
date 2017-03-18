@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:fitsSystemWindows="true"
+    tools:context="cn.com.greatchef.activity.MyEditorActivity">
+
+    <include
+        android:id="@+id/myeditor_headview"
+        layout="@layout/head_view" />
+
+    <cn.com.greatchef.customview.MainScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myeditor_headview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:focusableInTouchMode="true"
+                android:id="@+id/myeditor_headpic_view"
+                android:layout_width="match_parent"
+                android:layout_height="61.4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:text="@string/myeditor_headpic"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp" />
+
+                <cn.com.greatchef.customview.CircleImageView
+                    android:id="@+id/myeditor_headpic_view_headimg"
+                    android:layout_width="43.2dp"
+                    android:layout_height="43.2dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="45.6dp" />
+
+                <ImageView
+
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:background="#efefef" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myeditor_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/myeditor_headpic_view">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:text="@string/myeditor_name"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/myeditor_name_view_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="67dp"
+                    android:layout_marginRight="35dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:background="#efefef" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myeditor_sex_view"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/myeditor_name_view">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:text="@string/myeditor_sex"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/myeditor_sex_view_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="67dp"
+                    android:layout_marginRight="35dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:background="#efefef" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myeditor_shenfen_view"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/myeditor_sex_view">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:text="@string/myeditor_role"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp" />
+
+                <!--<RadioGroup-->
+                <!--android:id="@+id/change_radio_group"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="67.2dp"-->
+                <!--android:layout_marginRight="21.1dp"-->
+                <!--android:checkedButton="@+id/change_radio_0"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<RadioButton-->
+                <!--android:id="@+id/change_radio_0"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/ic_regist_select"-->
+                <!--android:button="@null"-->
+                <!--android:paddingBottom="3dp"-->
+                <!--android:paddingLeft="12dp"-->
+                <!--android:paddingRight="12dp"-->
+                <!--android:paddingTop="3dp"-->
+                <!--android:text="@string/regist_role_1"-->
+                <!--android:textSize="12sp" />-->
+
+                <!--<RadioButton-->
+                <!--android:id="@+id/change_radio_1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="@drawable/ic_regist_select"-->
+                <!--android:button="@null"-->
+                <!--android:paddingBottom="3dp"-->
+                <!--android:paddingLeft="8dp"-->
+                <!--android:paddingRight="8dp"-->
+                <!--android:paddingTop="3dp"-->
+                <!--android:text="@string/regist_role_2"-->
+                <!--android:textSize="12sp" />-->
+
+                <!--<RadioButton-->
+                <!--android:id="@+id/change_radio_2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="@drawable/ic_regist_select"-->
+                <!--android:button="@null"-->
+                <!--android:paddingBottom="3dp"-->
+                <!--android:paddingLeft="8dp"-->
+                <!--android:paddingRight="8dp"-->
+                <!--android:paddingTop="3dp"-->
+                <!--android:text="@string/regist_role_3"-->
+                <!--android:textSize="12sp" />-->
+
+                <!--<RadioButton-->
+                <!--android:id="@+id/change_radio_3"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:background="@drawable/ic_regist_select"-->
+                <!--android:button="@null"-->
+                <!--android:paddingBottom="3dp"-->
+                <!--android:paddingLeft="8dp"-->
+                <!--android:paddingRight="8dp"-->
+                <!--android:paddingTop="3dp"-->
+                <!--android:singleLine="true"-->
+                <!--android:text="@string/regist_role_4"-->
+                <!--android:textSize="12sp" />-->
+
+                <!--</RadioGroup>-->
+                <TextView
+                    android:id="@+id/myeditor_role_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="67dp"
+                    android:layout_marginRight="35dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+                <!--选择身份-->
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/myeditor_graybar1"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@id/myeditor_shenfen_view"
+                android:background="#f3f3f3" />
+
+            <RelativeLayout
+                android:id="@+id/myeditor_caixi_view"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/myeditor_graybar1">
+
+                <TextView
+                    android:id="@+id/caixi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:text="@string/myeditor_caixi"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/myeditor_caixi_view_caixi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_marginRight="50dp"
+                    android:layout_toRightOf="@+id/caixi"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:background="#efefef" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myeditor_danwei_view"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/myeditor_caixi_view">
+
+                <TextView
+                    android:id="@+id/myeditor_danwei_view_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:text="@string/myeditor_unit"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/myeditor_danwei_view_danwei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_toRightOf="@+id/myeditor_danwei_view_name"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:background="#efefef" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myeditor_zhiwei_view"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/myeditor_danwei_view">
+
+                <TextView
+                    android:id="@+id/zhiwei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:text="@string/myeditor_duty"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/myeditor_zhiwei_view_zhiwei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_toRightOf="@+id/zhiwei"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:background="#efefef" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myeditor_location_view"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/myeditor_zhiwei_view">
+
+                <TextView
+                    android:id="@+id/xianju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:text="@string/myeditor_nowloc"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/myeditor_location_view_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/xianju"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:background="#efefef" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/myeditor_homeland_view"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/myeditor_location_view">
+
+                <TextView
+                    android:id="@+id/jiaxiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:text="@string/myeditor_home"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/myeditor_homeland_view_land"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/jiaxiang"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/myeditor_graybar2"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@id/myeditor_homeland_view"
+                android:background="#f3f3f3" />
+
+            <RelativeLayout
+                android:id="@+id/myeditor_exp_view"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/myeditor_graybar2">
+
+                <TextView
+                    android:id="@+id/myeditor_exp_view_exp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:text="@string/myeditor_exp"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="21.5dp"
+                    android:background="#efefef" />
+
+            </RelativeLayout>
+
+            <cn.com.greatchef.customview.MyListView
+                android:id="@+id/mycenter_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/myeditor_exp_view"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@id/mycenter_listview"
+                android:background="#f3f3f3" />
+        </RelativeLayout>
+    </cn.com.greatchef.customview.MainScrollView>
+</RelativeLayout>

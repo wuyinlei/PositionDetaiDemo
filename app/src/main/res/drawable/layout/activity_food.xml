@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:fitsSystemWindows="true"
+                tools:context="cn.com.greatchef.activity.FoodDetailActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+
+        <cn.com.greatchef.customview.ObservableScrollView
+            android:id="@+id/scro_observer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="47dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff">
+
+
+                    <cn.com.greatchef.customview.BannerLayout
+                        android:id="@+id/vp_food_deteil"
+                        android:layout_width="match_parent"
+                        android:layout_height="360dp"
+                        app:autoPlayDuration="3000"
+                        app:defaultImage="@mipmap/lunbotu"
+                        app:indicatorMargin="25dp"
+                        app:indicatorPosition="centerBottom"
+                        app:indicatorShape="oval"
+                        app:indicatorSpace="4dp"
+                        app:scrollDuration="900"
+                        app:selectedIndicatorColor="#ffffff"
+                        app:selectedIndicatorHeight="7dp"
+                        app:selectedIndicatorWidth="7dp"
+                        app:unSelectedIndicatorColor="#80ffffff"
+                        app:unSelectedIndicatorHeight="7dp"
+                        app:unSelectedIndicatorWidth="7dp"/>
+
+                    <ImageView
+                        android:id="@+id/food_4_tag"
+                        android:layout_width="66dp"
+                        android:layout_height="56dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="11dp"
+                        android:layout_marginTop="11dp"/>
+
+                    <ImageView
+                        android:id="@+id/iv_circle_goback"
+                        android:layout_width="27dp"
+                        android:layout_height="27dp"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/icon_buck"/>
+
+                    <ImageView
+                        android:id="@+id/iv_formyself"
+                        android:layout_width="37dp"
+                        android:layout_height="37dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@mipmap/my_work_more_black"
+                        android:visibility="gone"/>
+
+                    <cn.com.greatchef.customview.CircleImageView
+                        android:id="@+id/iv_head_detail"
+                        android:layout_width="49dp"
+                        android:layout_height="49dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="351dp"
+                        android:src="@mipmap/morentouxiang"
+
+                        />
+
+
+                    <TextView
+
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vp_food_deteil"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/iv_head_detail"
+                        android:ellipsize="end"
+                        android:maxEms="14"
+                        android:singleLine="true"
+                        android:text="韩伟"
+                        android:textColor="#ad8748"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_name"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_toRightOf="@id/iv_head_detail"
+                        android:ellipsize="end"
+                        android:maxEms="15"
+                        android:singleLine="true"
+                        android:text="国籍职位"
+                        android:textColor="#b4b4b4"
+                        android:textSize="10sp"/>
+
+
+                    <Button
+
+                        android:id="@+id/bt_attention"
+                        android:layout_width="69dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/vp_food_deteil"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="12dp"
+
+
+                        android:background="@mipmap/addfollow"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="317dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginTop="19dp"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/tv_food_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+
+                        android:gravity="center"
+                        android:text="碳烤羊排配红薯溶红酒汁"
+                        android:textColor="#000000"
+                        android:textSize="18sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="317dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:layout_marginTop="19dp"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/tv_food_detils"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:lineSpacingExtra="5dp"
+                        android:text="做法详情"
+                        android:textColor="#666666"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="26dp"
+                    android:background="#efefef"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginTop="22dp"
+                    android:background="#ffffff">
+
+                    <ImageView
+                        android:id="@+id/iv_book"
+                        android:layout_width="17dp"
+                        android:layout_height="14dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="12dp"
+                        android:src="@mipmap/fooddetails_materials"/>
+
+                    <TextView
+                        android:id="@+id/tv_material"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/iv_book"
+                        android:text="@string/material"
+                        android:textColor="#ad8748"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="38dp"
+
+                        android:text="@string/close"
+                        android:textColor="#9b9b9b"
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/iv_material"
+                        android:layout_width="12dp"
+                        android:layout_height="7dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="19dp"
+                        android:layout_marginTop="6dp"
+                        android:src="@mipmap/icon_tip_close"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <cn.com.greatchef.customview.MyListView
+                    android:id="@+id/lv_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="#00000000"
+                    android:listSelector="#000000"></cn.com.greatchef.customview.MyListView>
+
+                <RelativeLayout
+                    android:id="@+id/rl_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp">
+
+                    <TextView
+                        android:id="@+id/tv_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="138dp"
+                        android:text="@string/look_all"
+                        android:textColor="#b6955d"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/tv_more"
+                        android:src="@mipmap/icon_tip_all"/>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_accessories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginTop="14dp"
+                        android:background="#ffffff">
+
+                        <ImageView
+                            android:id="@+id/iv_book3"
+                            android:layout_width="12dp"
+                            android:layout_height="17dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="12dp"
+                            android:src="@mipmap/fooddetails_accessories"/>
+
+                        <TextView
+                            android:id="@+id/tv_accessories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@id/iv_book3"
+                            android:text="@string/accessories"
+
+                            android:textColor="#ad8748"
+                            android:textSize="15sp"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_state_accessories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="38dp"
+
+                            android:text="@string/open"
+                            android:textColor="#9b9b9b"
+                            android:textSize="12sp"
+                            android:visibility="gone"/>
+
+
+                        <ImageView
+                            android:id="@+id/iv_accessories"
+                            android:layout_width="12dp"
+                            android:layout_height="7dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="6dp"
+                            android:src="@mipmap/icon_open"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+
+                    <cn.com.greatchef.customview.MyListView
+                        android:id="@+id/lv_accessories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:divider="#00000000"
+                        android:visibility="visible"></cn.com.greatchef.customview.MyListView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_seasoning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginTop="14dp"
+                        android:background="#ffffff">
+
+                        <ImageView
+                            android:id="@+id/iv_book4"
+                            android:layout_width="13dp"
+                            android:layout_height="17dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="12dp"
+                            android:src="@mipmap/fooddetails_seasoning"/>
+
+                        <TextView
+                            android:id="@+id/tv_seasoning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="14dp"
+                            android:layout_toRightOf="@id/iv_book4"
+                            android:text="@string/seasoning"
+
+                            android:textColor="#ad8748"
+                            android:textSize="15sp"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_state_seasoning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="38dp"
+
+                            android:text="@string/open"
+                            android:textColor="#9b9b9b"
+                            android:textSize="12sp"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/iv_seasoning"
+                            android:layout_width="12dp"
+                            android:layout_height="7dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="6dp"
+                            android:src="@mipmap/icon_open"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+
+                    <cn.com.greatchef.customview.MyListView
+                        android:id="@+id/lv_seasoning"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:divider="#00000000"
+                        android:visibility="visible"></cn.com.greatchef.customview.MyListView>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_method"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginTop="14dp"
+                        android:background="#ffffff">
+
+                        <ImageView
+                            android:id="@+id/iv_book1"
+                            android:layout_width="18dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@mipmap/icon_step"/>
+
+                        <TextView
+                            android:id="@+id/tv_method"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="11dp"
+                            android:layout_toRightOf="@id/iv_book1"
+                            android:text="@string/method"
+
+                            android:textColor="#ad8748"
+                            android:textSize="15sp"/>
+
+
+                        <TextView
+                            android:id="@+id/tv_state_method"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="38dp"
+
+                            android:text="@string/open"
+                            android:textColor="#9b9b9b"
+                            android:textSize="12sp"
+                            android:visibility="gone"/>
+
+                        <ImageView
+                            android:id="@+id/iv_method"
+                            android:layout_width="12dp"
+                            android:layout_height="7dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="19dp"
+                            android:layout_marginTop="6dp"
+                            android:src="@mipmap/icon_open"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+
+                    <cn.com.greatchef.customview.MyListView
+                        android:id="@+id/lv_method"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:divider="#00000000"
+                        android:visibility="visible"></cn.com.greatchef.customview.MyListView>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="22dp"
+
+                    android:background="#efefef"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:background="#ffffff">
+
+                    <ImageView
+                        android:id="@+id/iv_zan_count"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/icon_good"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_zan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/iv_zan_count"
+                        android:text="@string/zan"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_zan_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@id/tv_zan"
+                        android:text="(30)"
+                        android:textColor="#9b9b9b"
+                        android:textSize="14sp"/>
+
+                    <cn.com.greatchef.customview.HorizontialListView
+                        android:id="@+id/horizontialListView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:layout_below="@id/tv_zan_count"
+
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="22dp"
+                        android:dividerHeight="9dp"
+
+                        >
+
+                    </cn.com.greatchef.customview.HorizontialListView>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:layout_marginTop="22dp"
+                    android:background="#efefef"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:background="#ffffff">
+
+
+                    <ImageView
+                        android:id="@+id/iv_comment"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@mipmap/icon_talk"/>
+
+                    <TextView
+                        android:id="@+id/tv_comment_font"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+
+                        android:layout_toRightOf="@id/iv_comment"
+                        android:text="@string/comment"
+                        android:textColor="#000000"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_comment_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_toRightOf="@id/tv_comment_font"
+                        android:text="(30)"
+                        android:textColor="#9b9b9b"
+                        android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+
+                <cn.com.greatchef.customview.MyListView
+                    android:id="@+id/lv_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:divider="#00000000"
+                    android:dividerHeight="1dp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_more_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="@string/all_comment"
+                    android:textColor="#ad8748"
+                    android:textSize="14sp"
+                    android:visibility="gone"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="23dp"
+                    android:background="#efefef"/>
+
+                <TextView
+                    android:id="@+id/tv_jinxuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="22dp"
+                    android:text="@string/related_news"
+                    android:textColor="#b4b4b4"
+                    android:textSize="13sp"/>
+
+                <cn.com.greatchef.customview.MyListView
+                    android:id="@+id/lv_jinxuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    android:divider="#00000000"></cn.com.greatchef.customview.MyListView>
+
+                <include layout="@layout/ending_layout"/>
+
+            </LinearLayout>
+
+
+        </cn.com.greatchef.customview.ObservableScrollView>
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/animation_more"/>
+
+        <include
+            android:id="@+id/erro_net"
+            layout="@layout/net_erro"/>
+
+        <com.gradient.view.GradientActionBar
+            android:id="@+id/actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="top"
+            android:background="#fcfcfc">
+
+            <RelativeLayout
+                android:id="@+id/rl_back"
+                android:layout_width="80dp"
+                android:layout_height="47dp"
+                android:background="#fcfcfc">
+
+                <TextView
+
+                    android:id="@+id/bt_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="#fcfcfc"
+                    android:text="@string/back"
+                    android:textColor="#000000"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="17dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:src="@mipmap/head_back"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:id="@+id/iv_formyself_ac"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="7dp"
+                android:paddingTop="5dp"
+                android:src="@mipmap/my_work_more"
+                android:visibility="gone"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#ececec"/>
+        </com.gradient.view.GradientActionBar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_gravity="bottom"
+            android:background="@color/translucent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="60dp"
+                android:background="#efefef"></View>
+
+            <Button
+                android:id="@+id/et_comment"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="69dp"
+                android:src="@mipmap/comment_box"/>
+
+            <LinearLayout
+                android:id="@+id/rl_comment_zan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/et_comment"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:id="@+id/rl_share"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_share"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@mipmap/share"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/view_collect"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/iv_collect"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/teb_collection"
+                            android:clickable="false"/>
+                        <!--android:layout_marginLeft="200dp"-->
+
+                        <TextView
+                            android:id="@+id/tv_collect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/iv_collect"
+                            android:text="  "
+                            android:textColor="#9b9b9b"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rl_collect_animation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="13dp"
+                        android:gravity="center|bottom"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/iv_collect_animation"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/teb_collection_selected"
+                            android:clickable="false"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toRightOf="@id/iv_collect_animation"
+                            android:text="+1"
+                            android:textColor="#9b9b9b"/>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/view_zan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="60dp"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/iv_zan"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/icon_good"
+                            android:clickable="false"/>
+
+                        <TextView
+                            android:id="@+id/tv_count_zan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/iv_zan"
+                            android:text="  "
+                            android:textColor="#9b9b9b"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/rl_zan_animation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="14dp"
+                        android:gravity="center|bottom"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/iv_zan_animation"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@mipmap/icon_ingood"
+                            android:clickable="false"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_toRightOf="@id/iv_zan_animation"
+                            android:text="+1"
+                            android:textColor="#9b9b9b"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_zan_past"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="13dp"
+                        android:text="@string/zan_past"
+                        android:textColor="#ad8748"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+    <include
+        android:id="@+id/commnet_diaolog"
+        layout="@layout/commnet_diaolog"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+</RelativeLayout>
+

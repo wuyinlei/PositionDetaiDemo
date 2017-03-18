@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#2c2c2c">
+
+        <EditText
+            android:id="@+id/live_saysth"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/live_qa_et"
+            android:gravity="top|left"
+            android:hint="@string/mycenter_saysth"
+            android:imeOptions="actionSend"
+            android:paddingLeft="11dp"
+            android:layout_centerVertical="true"
+            android:paddingRight="11dp"
+            android:singleLine="true"
+            android:textColorHint="#b4b4b4"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+</RelativeLayout>

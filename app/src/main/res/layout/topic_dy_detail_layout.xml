@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/view_blank"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+
+        android:layout_alignParentTop="true"/>
+
+
+    <com.mingchu.positiondetaidemo.CircleImageView
+        android:id="@+id/iv_comment_head"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/view_blank"
+        android:layout_marginLeft="12dp"
+        android:src="@mipmap/login_logo_hdpi"/>
+
+    <TextView
+        android:id="@+id/tv_comment_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_blank"
+        android:layout_marginLeft="56dp"
+        android:ellipsize="end"
+        android:maxEms="8"
+        android:singleLine="true"
+        android:text="谢鹏碰"
+        android:textColor="#ad8748"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_shu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_blank"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tv_comment_person"
+        android:text="|"
+        android:textColor="#b4b4b4"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_comment_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_blank"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/tv_shu"
+        android:text="甜品师"
+        android:textColor="#b4b4b4"
+        android:textSize="11sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_unit"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="32dp"
+
+        android:ellipsize="end"
+        android:maxEms="8"
+        android:singleLine="true"
+        android:text="湖南京京办副厨师长"
+        android:textColor="#b4b4b4"
+        android:textSize="12sp"/>
+
+
+    <Button
+
+        android:id="@+id/bt_attention"
+        android:layout_width="69dp"
+        android:layout_height="25dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/addfollow"
+        android:visibility="visible"/>
+
+
+    <com.mingchu.positiondetaidemo.emojitextview.EmojiTextView
+        android:id="@+id/detail_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_unit"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="#名厨问答 打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,打击块,"
+        android:textColor="#000"
+        android:textSize="16sp"/>
+
+
+    <!--<com.mingchu.positiondetaidemo.widget.MultiImageView-->
+    <!--android:id="@+id/nineGrid"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/detail_text"-->
+    <!--android:layout_marginBottom="8dp"-->
+    <!--android:layout_marginRight="11dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_toRightOf="@+id/iv_comment_head"-->
+    <!--android:visibility="gone"-->
+    <!--app:ngv_gridSpacing="3dp"-->
+    <!--app:ngv_maxSize="9"-->
+    <!--app:ngv_mode="grid"-->
+    <!--app:ngv_singleImageRatio="1"-->
+    <!--app:ngv_singleImageSize="250dp"/>-->
+
+    <com.mingchu.positiondetaidemo.widget.FeedGridView
+        android:id="@+id/nineGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_text"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:paddingRight="4dp"
+        android:scrollbars="none"
+        android:stretchMode="none"
+        app:hSpacing="4dp"
+        app:mSpacing="56dp"
+        app:pSpacing="4dp"
+        app:vSpacing="4dp"/>
+
+    <TextView
+        android:id="@+id/topic_publish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_below="@+id/nineGrid"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textColor="#9b9b9b"
+        android:textSize="12sp"
+        tools:text="两分钟前"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/topic_publish_time"
+        android:layout_marginTop="14dp"
+        android:background="#f4f4f4"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="bottom"
+
+    android:orientation="horizontal"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp">
+
+    <EditText
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:id="@+id/input_editor"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/live_qa_view"
+        android:background="@drawable/live_qa_h_et"
+        android:gravity="center_vertical"
+        android:hint="@string/live_join_talk"
+        android:imeOptions="actionSend"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:singleLine="true"
+        android:textColorHint="#9b9b9b"
+        android:textSize="13sp" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/input_send"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="35dp"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:background="@drawable/input_send_button"-->
+        <!--android:enabled="false"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:text="rc_send"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="14sp" />-->
+
+</LinearLayout>

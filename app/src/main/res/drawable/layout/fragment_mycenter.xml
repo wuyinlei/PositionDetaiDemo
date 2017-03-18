@@ -1,0 +1,501 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    tools:context="cn.com.greatchef.fragment.MyCenterFragment">
+
+    <include
+        android:id="@+id/mycenter_head_view"
+        layout="@layout/head_view" />
+
+    <cn.com.greatchef.customview.MainScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mycenter_head_view"
+        android:background="#f3f3f3"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+        <!---->
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/mycenter_center"
+                layout="@layout/my_idcard" />
+
+            <RelativeLayout
+                android:id="@+id/mycenter_zuo"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/mycenter_center"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/mycenter_zuo_img"
+                    android:layout_width="16dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/my_icon_pic" />
+
+                <TextView
+                    android:id="@+id/mycenter_zuo_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.5dp"
+                    android:layout_toEndOf="@+id/mycenter_zuo_img"
+                    android:layout_toRightOf="@+id/mycenter_zuo_img"
+                    android:text="@string/mycenter_pro"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mycenter_zuo_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/mycenter_zuo_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="48dp"
+                    android:textColor="#9b9b9b"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginTop="19dp"
+                    android:background="#efefef" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mycenter_cang"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/mycenter_zuo"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/mycenter_cang_img"
+                    android:layout_width="16dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/my_icon_collection" />
+
+                <TextView
+                    android:id="@+id/mycenter_cang_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.5dp"
+                    android:layout_toEndOf="@+id/mycenter_cang_img"
+                    android:layout_toRightOf="@+id/mycenter_cang_img"
+                    android:text="@string/mycenter_coll"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mycenter_cang_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/mycenter_cang_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="48dp"
+                    android:textColor="#9b9b9b"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_marginLeft="53dp"-->
+                <!--android:layout_marginTop="19dp"-->
+                <!--android:background="#efefef"-->
+                <!--/>-->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mycenter_zan"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/mycenter_cang"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/mycenter_zan_img"
+                    android:layout_width="16dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/my_icon_good" />
+
+                <TextView
+                    android:id="@+id/mycenter_zan_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.5dp"
+                    android:layout_toEndOf="@+id/mycenter_zan_img"
+                    android:layout_toRightOf="@+id/mycenter_zan_img"
+                    android:text="@string/mycenter_zan"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mycenter_zan_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/mycenter_zan_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="48dp"
+                    android:textColor="#9b9b9b"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@+id/mycenter_zan"
+                android:background="#f3f3f3" />
+
+            <RelativeLayout
+                android:id="@+id/mycenter_xiao"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/mycenter_zan"
+                android:layout_marginTop="15dp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/mycenter_xiao_img"
+                    android:layout_width="16dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/my_icon_news" />
+
+                <TextView
+                    android:id="@+id/mycenter_xiao_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.5dp"
+                    android:layout_toEndOf="@+id/mycenter_xiao_img"
+                    android:layout_toRightOf="@+id/mycenter_xiao_img"
+                    android:text="@string/mycenter_msg"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/mycenter_xiao_red"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--android:layout_toRightOf="@+id/mycenter_xiao_text"-->
+                <!--android:background="@drawable/red_message"-->
+                <!--android:enabled="false"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingLeft="4dp"-->
+                <!--android:paddingRight="4dp"-->
+                <!--android:text="15"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="10sp" />-->
+                <ImageView
+                    android:id="@+id/mycenter_xiao_red"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/mycenter_xiao_text"
+                    android:src="@mipmap/my_redpiont" />
+
+                <TextView
+                    android:id="@+id/mycenter_xiao_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/mycenter_xiao_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="48dp"
+                    android:textColor="#9b9b9b"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginTop="19dp"
+                    android:background="#efefef" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mycenter_guan"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/mycenter_xiao"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/mycenter_guan_img"
+                    android:layout_width="16dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/my_myfollow_icon" />
+
+                <TextView
+                    android:id="@+id/mycenter_guan_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.5dp"
+                    android:layout_toEndOf="@+id/mycenter_guan_img"
+                    android:layout_toRightOf="@+id/mycenter_guan_img"
+                    android:text="@string/mycenter_follow"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mycenter_guan_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/mycenter_guan_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="48dp"
+                    android:textColor="#9b9b9b"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginTop="19dp"
+                    android:background="#efefef" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mycenter_fans"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/mycenter_guan"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/mycenter_fans_img"
+                    android:layout_width="16dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/my_icon_myfans" />
+
+                <TextView
+                    android:id="@+id/mycenter_fans_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.5dp"
+                    android:layout_toEndOf="@+id/mycenter_fans_img"
+                    android:layout_toRightOf="@+id/mycenter_fans_img"
+                    android:text="@string/mycenter_fans"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/mycenter_fans_red"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--android:layout_toRightOf="@+id/mycenter_fans_text"-->
+                <!--android:background="@drawable/red_message"-->
+                <!--android:enabled="false"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingLeft="4dp"-->
+                <!--android:paddingRight="4dp"-->
+                <!--android:text="0"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="10sp" />-->
+                <ImageView
+                    android:id="@+id/mycenter_fans_red"
+                    android:layout_width="7dp"
+                    android:layout_height="7dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@+id/mycenter_fans_text"
+                    android:src="@mipmap/my_redpiont" />
+
+                <TextView
+                    android:id="@+id/mycenter_fans_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/mycenter_fans_text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="48dp"
+                    android:textColor="#9b9b9b"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/mycenter_gray_view"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_below="@+id/mycenter_fans"
+                android:background="#f3f3f3" />
+
+            <RelativeLayout
+                android:id="@+id/mycenter_er"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/mycenter_gray_view"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/mycenter_er_img"
+                    android:layout_width="16dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/def" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.5dp"
+                    android:layout_toEndOf="@+id/mycenter_er_img"
+                    android:layout_toRightOf="@+id/mycenter_er_img"
+                    android:text="@string/mycenter_er"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginTop="19dp"
+                    android:background="#efefef" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/mycenter_set"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/mycenter_er"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/mycenter_set_img"
+                    android:layout_width="16dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@mipmap/my_icon_setup" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.5dp"
+                    android:layout_toEndOf="@+id/mycenter_set_img"
+                    android:layout_toRightOf="@+id/mycenter_set_img"
+                    android:text="@string/mycenter_set"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="21dp"
+                    android:src="@mipmap/my_item_go" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/mycenter_set"
+                android:background="#f3f3f3">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginRight="130dp"
+                    android:layout_marginTop="37dp"
+                    android:background="@mipmap/greatchef" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </cn.com.greatchef.customview.MainScrollView>
+</RelativeLayout>

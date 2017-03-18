@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    tools:context="cn.com.greatchef.activity.RecommandAttentionActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.android.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/pull_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_search"
+            android:layout_marginTop="47dp">
+
+            <com.android.pulltorefresh.NoPullableListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#AAA"
+
+                android:listSelector="@android:color/transparent" />
+
+        </com.android.pulltorefresh.PullToRefreshLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_gravity="top"
+            android:background="#fcfcfc">
+
+            <RelativeLayout
+                android:id="@+id/rl_back"
+                android:layout_width="80dp"
+                android:layout_height="46dp">
+
+                <TextView
+                    android:id="@+id/bt_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:background="#fcfcfc"
+                    android:text="@string/back"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="17dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:src="@mipmap/head_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/push_recommnd"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <include
+
+            android:id="@+id/include_more"
+
+            layout="@layout/animation_more" />
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

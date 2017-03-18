@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#fff"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="22dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="赵呵呵：很好吃，很好吃，很好吃很好吃很好吃，很好吃，很好吃很好吃很好吃很好吃，很好吃很好吃很好吃很好吃，很好吃，很好吃，很好吃，很好吃，其实我们想法撒旦法士大夫撒地方萨芬"
+        android:textSize="13sp"/>
+
+</LinearLayout>

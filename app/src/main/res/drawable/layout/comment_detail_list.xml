@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view_blank"
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+
+        android:layout_alignParentTop="true" />
+
+
+    <cn.com.greatchef.customview.CircleImageView
+        android:id="@+id/iv_comment_head"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/view_blank"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/login_logo_hdpi" />
+
+    <TextView
+        android:id="@+id/tv_comment_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_blank"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/iv_comment_head"
+        android:ellipsize="end"
+        android:maxEms="8"
+        android:singleLine="true"
+        android:text="谢鹏碰"
+        android:textColor="#ad8748"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_shu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_blank"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tv_comment_person"
+        android:text="|"
+        android:textColor="#b4b4b4"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/tv_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_blank"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/tv_shu"
+        android:text="两分钟前"
+        android:textColor="#b4b4b4"
+        android:textSize="11sp" />
+
+
+    <TextView
+        android:id="@+id/tv_unit"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@id/iv_comment_head"
+        android:ellipsize="end"
+        android:maxEms="8"
+        android:singleLine="true"
+        android:text="湖南京"
+        android:textColor="#b4b4b4"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_comment_duty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@id/tv_unit"
+        android:ellipsize="end"
+
+        android:maxEms="8"
+        android:singleLine="true"
+        android:text="京办副厨师长"
+        android:textColor="#b4b4b4"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/iv_commnet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/view_blank"
+        android:layout_marginRight="20dp"
+        android:text="@string/reply"
+        android:textColor="#b6955d"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:id="@+id/view_blank1"
+        android:layout_width="281dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_comment"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/fooddetails_line"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_review_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_blank1"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="54dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/comment">
+
+
+            <ListView
+                android:id="@+id/lv_review_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="9dp"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#00000000"
+                android:dividerHeight="2dp"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_comment_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ll_review_comment"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@id/iv_comment_head"
+        android:background="#efefef" />
+
+    <View
+        android:id="@+id/view_comment_bottom_long"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ll_review_comment"
+        android:layout_marginTop="14dp"
+        android:background="#efefef"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_comment"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/iv_comment_head"
+        android:layout_alignLeft="@+id/tv_unit"
+        android:layout_alignStart="@+id/tv_unit">
+
+
+        <TextView
+
+            android:id="@+id/tv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:text=""
+            android:textColor="#4a4a4a"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/upload2_succ_pop"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="172dp"
+        android:layout_height="101dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:background="@color/white"
+        >
+
+
+        <Button
+            android:id="@+id/upload2_succ"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:shadowColor="@color/black"
+            android:text="@string/upload2_suc"
+            android:textSize="14sp"
+            />
+
+        <View
+            android:id="@+id/upload2_pop_center_h"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/upload2_succ"
+            android:background="#efefef"
+            />
+
+        <View
+            android:id="@+id/upload2_pop_center"
+            android:layout_width="1dp"
+            android:layout_height="39dp"
+            android:layout_below="@+id/upload2_pop_center_h"
+            android:layout_centerHorizontal="true"
+            android:background="#efefef"/>
+
+        <Button
+            android:id="@+id/upload2_backk"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@id/upload2_pop_center"
+            android:background="@color/white"
+            android:text="@string/upload2_back"
+            android:textColor="#ad8748"
+            android:textSize="14sp"
+            />
+
+        <Button
+            android:id="@+id/upload2_sharee"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/upload2_pop_center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:text="@string/upload2_share"
+            android:textColor="#b4b4b4"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

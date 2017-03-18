@@ -1,0 +1,181 @@
+<!--
+  Copyright 2014 Soichiro Kashima
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/tools"
+             android:id="@+id/headerview"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="182dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@mipmap/ad_view_photo"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            android:id="@+id/topic_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="91dp"
+            android:gravity="center"
+            android:text="#名厨问答"
+            android:textColor="#ffffff"
+            android:textSize="21sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/topic_content_text"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="124dp"
+            android:gravity="center"
+            android:text="有什么问题尽管提出来~"
+            android:textColor="#ffffff"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/live_sign_headview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp">
+
+        <RelativeLayout
+            android:id="@+id/re_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <View
+                android:id="@+id/view_rv_iv1"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/shape_emotion_wight"/>
+
+            <com.mingchu.positiondetaidemo.CircleImageView
+                android:id="@+id/rv_iv1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"/>
+
+            <View
+                android:id="@+id/view_rv_iv2"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="34dp"
+                android:background="@drawable/shape_emotion_wight"/>
+
+            <com.mingchu.positiondetaidemo.CircleImageView
+                android:id="@+id/rv_iv2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="35dp"
+                />
+
+            <View
+                android:id="@+id/view_rv_iv3"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="54dp"
+                android:background="@drawable/shape_emotion_wight"
+                android:visibility="visible"/>
+
+            <com.mingchu.positiondetaidemo.CircleImageView
+                android:id="@+id/rv_iv3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="55dp"
+                android:visibility="visible"
+                />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/topic_people_count"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:layout_toRightOf="@+id/re_image"
+            android:gravity="center_vertical"
+            android:text="1000人已参与"
+            android:textColor="#ffffff"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/overlay"
+        android:layout_marginTop="182dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/default_topic_sort_text"
+            android:layout_width="wrap_content"
+
+            android:layout_height="18dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@+id/img_topic_sort_up_down"
+            android:gravity="center_horizontal"
+            android:text="默认排序"
+            android:textColor="#9b9b9b"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:id="@+id/img_topic_sort_up_down"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:background="#d8d8d8"
+            android:orientation="vertical"
+            android:src="@mipmap/dynamic_sort">
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

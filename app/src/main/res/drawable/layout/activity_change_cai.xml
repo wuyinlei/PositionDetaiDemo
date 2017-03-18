@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.com.greatchef.activity.ChangeCaiActivity">
+
+    <include
+        android:id="@+id/change_cai_head_view"
+        layout="@layout/head_view"/>
+
+    <ListView
+        android:id="@+id/change_cai_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/change_cai_head_view"
+        android:background="@color/white"
+        android:divider="@null"
+        ></ListView>
+</RelativeLayout>

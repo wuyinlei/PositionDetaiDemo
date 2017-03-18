@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myeditor_change_head_pop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/myeditor_pop_am"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/myeditor_open_camera"
+            android:textColor="#232323"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efefef" />
+
+        <TextView
+            android:id="@+id/myeditor_pop_ca"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:gravity="center"
+
+            android:textColor="#232323"
+            android:textSize="15sp"
+            android:text="@string/myeditor_open_dcim" />
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f3f3f3" />
+
+        <TextView
+            android:id="@+id/myeditor_pop_dis"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="#232323"
+            android:textSize="15sp"
+            android:text="@string/myeditor_open_dissmiss" />
+
+        <!--android:textColor="#235326"-->
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="cn.com.greatchef.activity.MainActivity">
+
+    <cn.com.greatchef.customview.UnScrollViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d4d4d4" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+
+        <RadioGroup
+            android:id="@+id/main_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@color/white"
+
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <RadioButton
+                android:id="@+id/main_radiobutton_homepage"
+                style="@style/BottomTabStyleRadioButton"
+                android:background="@mipmap/tab"
+                android:drawableTop="@drawable/selector_main_1"
+                android:gravity="bottom|center"
+                android:paddingBottom="3dp"
+                android:paddingTop="4dp"
+                android:text="@string/push" />
+
+            <RadioButton
+                android:id="@+id/main_radiobutton_goods"
+
+                style="@style/BottomTabStyleRadioButton"
+                android:background="@mipmap/tab"
+                android:drawableTop="@drawable/selector_main_2"
+                android:gravity="bottom|center"
+                android:paddingBottom="3dp"
+                android:paddingTop="4dp"
+                android:text="@string/discover" />
+
+            <RadioButton
+                android:id="@+id/main_radiobutton_transaction"
+                style="@style/BottomTabStyleRadioButton"
+                android:background="@mipmap/tab"
+                android:drawableTop="@drawable/selector_main_3"
+                android:gravity="bottom|center"
+                android:paddingBottom="3dp"
+                android:paddingTop="6dp"
+                android:text="发布" />
+
+            <RadioButton
+                android:id="@+id/main_radiobutton_more"
+                style="@style/BottomTabStyleRadioButton"
+                android:background="@mipmap/tab"
+                android:drawableTop="@drawable/selector_main_4"
+                android:gravity="bottom|center"
+                android:paddingBottom="3dp"
+                android:paddingTop="4dp"
+                android:text="@string/action" />
+            <!--android:background="@android:color/transparent"-->
+
+            <RadioButton
+                android:id="@+id/main_radiobutton_5"
+                style="@style/BottomTabStyleRadioButton"
+                android:background="@mipmap/tab"
+                android:drawableTop="@drawable/selector_main_5"
+                android:gravity="bottom|center"
+                android:paddingBottom="3dp"
+                android:paddingTop="4dp"
+                android:text="@string/me" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/main_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/red_message"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</LinearLayout>

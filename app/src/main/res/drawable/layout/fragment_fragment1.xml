@@ -1,0 +1,113 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.com.greatchef.fragment.MomentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/tv_attention"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_toLeftOf="@+id/tv_line"
+                android:background="#fcfcfc"
+                android:text="@string/attention"
+                android:textColor="#ad8748"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/view_attention"
+
+                android:layout_width="19dp"
+
+                android:layout_height="2dp"
+                android:layout_alignLeft="@id/tv_attention"
+                android:layout_below="@id/tv_attention"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:background="#ad8748" />
+
+            <TextView
+                android:id="@+id/tv_line"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+
+
+                android:text="|"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_latest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@id/tv_line"
+                android:background="#fcfcfc"
+                android:text="@string/last"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/view_latest"
+                android:layout_width="19dp"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@id/tv_latest"
+                android:layout_below="@id/tv_latest"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:background="#ad8748"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_add_search"
+                android:layout_width="80dp"
+                android:layout_height="47dp"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/iv_add_search"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="14dp"
+                    android:src="@mipmap/addfollow_out" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efefef" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+</FrameLayout>

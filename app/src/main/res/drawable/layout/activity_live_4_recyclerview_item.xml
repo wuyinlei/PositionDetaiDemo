@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/live_4_pic"
+        android:layout_width="215dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="11dp"
+        android:scaleType="fitXY" />
+
+    <!--<ImageView-->
+    <!--android:id="@+id/live_4_pic"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="11dp"-->
+    <!--android:scaleType="fitXY" />-->
+
+    <TextView
+        android:id="@+id/live_4_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/live_state_bgcolor_ing"
+        android:paddingBottom="1dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="正在直播"
+        android:textColor="#ffffff"
+        android:textSize="11sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <!--%赞    %评论-->
+    <TextView
+        android:id="@+id/approval_comment_topic_text"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:textColor="#4a4a4a"
+        android:textSize="14sp"
+        tools:text="200赞    193评论"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/horizontal_user_image_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="48dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_below="@+id/horizontal_user_image_recycler_view"
+        android:layout_height="2dp"
+        android:background="#d6d6d6"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+</RelativeLayout>

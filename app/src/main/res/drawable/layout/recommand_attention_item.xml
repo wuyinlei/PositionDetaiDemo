@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:background="#ffffff">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_person_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff">
+
+            <cn.com.greatchef.customview.CircleImageView
+
+                android:id="@+id/iv_attention_head"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/login_logo_hdpi" />
+
+            <TextView
+                android:id="@+id/tv_recommand_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/iv_attention_head"
+                android:ellipsize="end"
+                android:maxEms="8"
+                android:singleLine="true"
+                android:text="邱琼"
+                android:textColor="#000000"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tv_recommand_possition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@id/iv_attention_head"
+                android:ellipsize="end"
+                android:maxEms="12"
+                android:singleLine="true"
+                android:text="新天地安达士酒店行政总厨新天地安达士酒店行政总厨新天地安达士酒店行政总厨"
+                android:textColor="#b4b4b4"
+                android:textSize="12sp"
+
+                />
+
+        </RelativeLayout>
+
+        <Button
+
+            android:id="@+id/bt_attention"
+
+            android:layout_width="69dp"
+
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/addfollow" />
+
+
+        <cn.com.greatchef.customview.NoScrollGridView
+            android:id="@+id/grideView_attention"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_below="@id/rl_person_click"
+
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginTop="13dp"
+            android:background="#ffffff"
+
+            android:numColumns="3"
+            android:verticalSpacing="3dp">
+
+
+        </cn.com.greatchef.customview.NoScrollGridView>
+
+        <View
+            android:layout_width="336dp"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#e9e9e9" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

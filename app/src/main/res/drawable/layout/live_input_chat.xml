@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_chat_inputview"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/translucent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2a2a29"
+        android:paddingBottom="10dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:paddingTop="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/live_input_chat_et"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/live_qa_view"
+            android:background="@drawable/live_qa_et"
+            android:gravity="center_vertical"
+            android:hint="@string/live_join_talk"
+            android:imeOptions="actionSend"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:textColorHint="#9b9b9b"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

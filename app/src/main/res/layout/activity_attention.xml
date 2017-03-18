@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/tab_item"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:visibility="visible">
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            android:fillViewport="true"
+            app:tabIndicatorColor="@color/main_yellow"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@color/main_yellow"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            app:tabTextColor="#000000">
+
+
+            <android.support.design.widget.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="关注"/>
+
+            <android.support.design.widget.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="最新"/>
+
+        </android.support.design.widget.TabLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#efefef"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="17dp"
+            android:layout_gravity="center"
+            android:background="#d4d4d4"/>
+
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_item"/>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/tab_item"-->
+    <!--android:gravity="center">-->
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/re_attention"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center">-->
+
+    <!--<View-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:background="@color/main_yellow"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/re_update"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:visibility="invisible">-->
+
+    <!--<View-->
+    <!--android:layout_width="80dp"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:background="@color/main_yellow"/>-->
+    <!--</RelativeLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

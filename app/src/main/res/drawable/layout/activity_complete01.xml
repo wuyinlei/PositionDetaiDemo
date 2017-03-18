@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="cn.com.greatchef.activity.CompleteActivity01">
+
+    <include
+        android:id="@+id/complete_head"
+        layout="@layout/head_view" />
+
+    <LinearLayout
+        android:id="@+id/complete_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/complete_head"
+        android:layout_marginLeft="51dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/complete_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:background="@null"
+            android:hint="@string/regist_passwd"
+            android:inputType="textPassword"
+            android:paddingBottom="12dp"
+            android:paddingTop="15dp"
+            android:textColorHint="#b4b4b4"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#efefef" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/regist_my_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/complete_info"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/regist_role_text"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <RadioGroup
+        android:id="@+id/regist_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/regist_my_role"
+        android:layout_marginLeft="41dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginTop="22dp"
+        android:checkedButton="@+id/regist_radio_0"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/regist_radio_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_regist_select"
+            android:button="@null"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp"
+            android:text="@string/regist_role_1"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/regist_radio_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_regist_select"
+            android:button="@null"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:text="@string/regist_role_2"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/regist_radio_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_regist_select"
+            android:button="@null"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:text="@string/regist_role_3"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/regist_radio_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_regist_select"
+            android:button="@null"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="3dp"
+            android:singleLine="true"
+            android:text="@string/regist_role_4"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/regist_sure"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/regist_radiogroup"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/rect_black"
+        android:gravity="center"
+        android:paddingBottom="3dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="3dp"
+        android:text="@string/findpsd_commit"
+        android:textColor="@color/reg_color"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/regist_rule"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/regist_sure"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/regist_agree"
+        android:textColor="#9b9b9b"
+        android:textSize="12sp" />
+</RelativeLayout>

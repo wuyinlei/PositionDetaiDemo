@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="cn.com.greatchef.activity.MyEditorLandActivity">
+
+    <include
+        android:id="@+id/myeditor_land_headview"
+        layout="@layout/head_view" />
+
+    <LinearLayout
+        android:id="@+id/myeditor_land_getloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myeditor_land_headview"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="#f4f4f4"
+            android:gravity="center|left"
+            android:paddingLeft="21dp"
+            android:text="@string/myeditor_loced" />
+
+        <RelativeLayout
+            android:id="@+id/loc_view"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/myeditor_land_getloc_img"
+                android:layout_width="14dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="21dp"
+                android:src="@mipmap/photo_map" />
+
+            <TextView
+                android:id="@+id/myeditor_land_getloc_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/myeditor_land_getloc_img"
+                android:text=""
+                android:textColor="#ad8748"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="19dp"
+                android:background="@mipmap/my_item_go" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="#f4f4f4"
+            android:gravity="center|left"
+            android:paddingLeft="21dp"
+            android:text="@string/myeditor_loc_all" />
+
+    </LinearLayout>
+
+    <cn.com.greatchef.customview.MainScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myeditor_land_getloc"
+        android:fadingEdge="none">
+
+        <cn.com.greatchef.customview.MyListView
+            android:id="@+id/myeditor_land_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@null" />
+    </cn.com.greatchef.customview.MainScrollView>
+
+</RelativeLayout>

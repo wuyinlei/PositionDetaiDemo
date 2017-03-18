@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/tv_topic_1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="厨师入门必备的30个烹饪小贴士"
+            android:textColor="#4a4a4a"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

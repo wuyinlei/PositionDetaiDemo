@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:fitsSystemWindows="true"
+    tools:context="cn.com.greatchef.activity.SetingFeedbackActivity">
+
+    <include
+        android:id="@+id/feed_include"
+        layout="@layout/head_view"/>
+
+
+    <EditText
+        android:id="@+id/seting_feed_content"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        android:layout_below="@+id/feed_include"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:gravity="top"
+        android:textColorHint="#B4B4B4"
+        android:hint="@string/feedcall_back_content"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:paddingTop="12dp"
+        android:textSize="15sp"/>
+
+
+    <EditText
+        android:id="@+id/seting_feed_contact"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/seting_feed_content"
+        android:layout_marginTop="37dp"
+        android:background="@color/white"
+        android:hint="@string/feedcall_back_phone"
+        android:paddingLeft="21dp"
+        android:paddingRight="21dp"
+        android:singleLine="true"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/seting_feed_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@mipmap/weichat_logo"/>
+
+    <TextView
+        android:id="@+id/feed_back_weichat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seting_feed_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="158dp"
+        android:text="@string/feedcall_back_weichat1"/>
+
+    <TextView
+        android:id="@+id/feed_back_weichat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feed_back_weichat1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/feedcall_back_weichat2"/>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/feed_back_weichat2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/feedcall_back_weichat3"/>
+</RelativeLayout>

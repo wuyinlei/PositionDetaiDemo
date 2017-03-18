@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.AddSeekActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="290dp"
+            android:layout_height="33dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/rect_eddtext"
+            android:hint="@string/search_person"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="32dp"
+            android:textColorHint="#9b9b9b"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:src="@mipmap/follow_search" />
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="60dp"
+            android:layout_height="54dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textColor="#ad8748"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#efefef" />
+    </RelativeLayout>
+
+
+    <com.android.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/pull_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_search">
+
+        <com.android.pulltorefresh.NoPullableListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#AAA"
+
+            android:listSelector="@android:color/transparent" />
+
+    </com.android.pulltorefresh.PullToRefreshLayout>
+
+    <RelativeLayout
+        android:background="#ffffff"
+        android:id="@+id/rl_nobody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_search"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_nobody"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="114dp"
+            android:src="@mipmap/nobady" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_nobody"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="@string/no_body"
+            android:textColor="#b4b4b4"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

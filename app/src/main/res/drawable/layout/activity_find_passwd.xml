@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context="cn.com.greatchef.activity.FindPasswdActivity">
+
+    <include
+        android:id="@+id/find_head_view"
+        layout="@layout/head_view" />
+
+
+    <RelativeLayout
+        android:id="@+id/find_name_id"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@+id/find_head_view"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/find_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:hint="@string/regist_phone"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#b4b4b4"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/primary_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/find_code_id"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@+id/find_name_id"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+
+        <EditText
+            android:id="@+id/find_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="100dp"
+            android:background="@null"
+            android:hint="@string/regist_msg"
+            android:maxLength="4"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#b4b4b4"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/find_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignEnd="@+id/view4"
+            android:layout_alignRight="@+id/view4"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/regist_getcode"
+            android:textColor="#ad8748"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/primary_gray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/find_passwd_id"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@+id/find_code_id"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+
+        <EditText
+            android:id="@+id/find_passwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:hint="@string/change_passwd_old_new_hint"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#b4b4b4"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/primary_gray" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/find_sure"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/find_passwd_id"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="@string/findpsd_commit"
+        android:textColor="@color/reg_color"
+        android:textSize="15sp" />
+
+</RelativeLayout>

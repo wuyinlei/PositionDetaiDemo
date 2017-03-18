@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context="cn.com.greatchef.activity.MyFollowActivity">
+
+    <include
+        android:id="@+id/myfollow_head"
+        layout="@layout/head_view" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myfollow_head">
+
+
+        <com.android.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/myfollow_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--android:background="@mipmap/my_follow_onfollow"-->
+            <com.android.pulltorefresh.PullnoListview
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#AAA"
+                android:dividerHeight="5dp"
+                android:listSelector="@android:color/transparent" />
+
+        </com.android.pulltorefresh.PullToRefreshLayout>
+
+        <RelativeLayout
+            android:id="@+id/my_follow_nobody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/my_follow_nobody_pic"
+                android:layout_width="67dp"
+                android:layout_height="67dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="114dp"
+                android:background="@mipmap/followsomebody" />
+
+            <TextView
+                android:id="@+id/my_follow_nobody_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/my_follow_nobody_pic"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:text="@string/you_no_person"
+                android:textColor="#b4b4b4"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/my_follow_foot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@mipmap/greatchef"
+        android:visibility="visible" />
+</RelativeLayout>

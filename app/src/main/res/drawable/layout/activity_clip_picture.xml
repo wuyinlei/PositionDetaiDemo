@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="cn.com.greatchef.activity.ClipPictureActivity">
+
+
+
+    <com.lyft.android.scissors.CropView
+        app:cropviewViewportOverlayColor="#a0000000"
+        android:id="@+id/clip_pic_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_gravity="bottom"
+            android:id="@+id/clip_pic_text1"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:background="@color/translucent"
+            android:gravity="center"
+            android:text="@string/regist_no"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_gravity="bottom"
+            android:id="@+id/clip_pic_text"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="1"
+            android:background="@color/translucent"
+            android:gravity="center"
+            android:text="@string/regist_yes"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>
+

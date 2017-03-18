@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="15dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--互动消息，评论点赞等-->
+    <RelativeLayout
+        android:id="@+id/mymsg_c_first_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <cn.com.greatchef.customview.CircleImageView
+            android:id="@+id/mymsg_c_headpic"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="16dp"
+            android:src="@mipmap/zuixin" />
+
+        <TextView
+            android:id="@+id/mymsg_c_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/mymsg_c_headpic"
+            android:ellipsize="end"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/mymsg_c_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mymsg_c_name"
+            android:layout_alignStart="@+id/mymsg_c_name"
+            android:layout_below="@+id/mymsg_c_name"
+            android:text="赞了你"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/mymsg_c_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIme"
+            android:textColor="#b4b4b4"
+            android:textSize="11sp"
+            android:layout_alignTop="@+id/mymsg_c_name"
+            android:layout_alignRight="@+id/mymsg_c_pic"
+            android:layout_alignEnd="@+id/mymsg_c_pic" />
+
+        <ImageView
+            android:id="@+id/mymsg_c_pic"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/mymsg_c_title"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="11dp"
+            android:src="@mipmap/zuixin" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/mymsg_talk"-->
+        <!--android:layout_width="22dp"-->
+        <!--android:layout_height="22dp"-->
+        <!--android:padding="4dp"-->
+        <!--android:layout_alignEnd="@+id/mymsg_c_content"-->
+        <!--android:layout_alignRight="@+id/mymsg_c_content"-->
+        <!--android:layout_below="@+id/mymsg_c_time"-->
+        <!--android:src="@mipmap/my_message_talk"/>-->
+        <TextView
+            android:id="@+id/mymsg_talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mymsg_c_time"
+            android:layout_marginRight="22dp"
+            android:layout_toLeftOf="@+id/mymsg_c_pic"
+            android:layout_toStartOf="@+id/mymsg_c_pic"
+            android:padding="5dp"
+            android:text="@string/mycenter_saysth"
+            android:textColor="#b6955d"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/mymsg_c_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/mymsg_c_title"
+            android:layout_alignStart="@+id/mymsg_c_title"
+            android:layout_below="@+id/mymsg_c_title"
+            android:layout_marginRight="88dp"
+            android:layout_marginTop="3dp"
+            android:text="通知"
+            android:textColor="#4a4a4a"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mymsg_c_ping_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mymsg_c_first_view"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="5dp"
+        android:background="#f6f6f6">
+
+        <LinearLayout
+            android:id="@+id/mymsg_c_ping_jian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="end">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="11dp"
+                android:layout_marginRight="20dp"
+                android:background="@mipmap/my_message_point" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="11dp"
+            android:layout_alignBottom="@+id/mymsg_c_ping_title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/mymsg_c_ping_title"
+            android:layout_marginLeft="11dp"
+            android:background="#b4b4b4" />
+
+        <TextView
+            android:id="@+id/mymsg_c_ping_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mymsg_c_ping_jian"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="11dp"
+            android:text="你的评论"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mymsg_c_ping_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mymsg_c_ping_title"
+            android:layout_marginBottom="9dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="10dp"
+            android:background="#f6f6f6"
+            android:textSize="13sp"
+            android:text="" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/mymsg_c_ping_view"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="19dp"
+        android:background="#efefef" />
+</RelativeLayout>

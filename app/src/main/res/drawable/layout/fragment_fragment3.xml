@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/upload_fragment_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/photo_backgroud"
+    tools:context="cn.com.greatchef.fragment.UpLoadFragment">
+
+    <RelativeLayout
+        android:id="@+id/go4live"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:background="@color/red"
+        android:visibility="gone">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:layout_below="@+id/go4live"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/live_4_title"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_marginTop="9.6dp">
+
+            <TextView
+                android:layout_width="15.4dp"
+                android:layout_height="17.3dp"
+                android:layout_marginLeft="12.5dp"
+                android:text="●"
+                android:textColor="#ad8748"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/title_languang"
+                android:layout_width="28dp"
+                android:layout_height="17dp"
+                android:layout_marginLeft="35dp"
+                android:text="直播"
+                android:textColor="#b4b4b4"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/live_4_title"
+            android:layout_marginTop="10.7dp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/up_load_open_ca"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/up_load_open_dcmi"
+        android:layout_alignLeft="@+id/up_load_open_dcmi"
+        android:layout_alignStart="@+id/up_load_open_dcmi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rect_tback">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:background="@mipmap/photo_uptakephoto" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_fragment_open_ca"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/up_load_open_dcmi"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/rect_tback"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="12dp"
+                android:background="@mipmap/photo_takepic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload_fragment_open_dc"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/up_load_open_q"
+        android:layout_width="87dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:src="@mipmap/photo_invitation"
+        android:visibility="gone" />
+</RelativeLayout>

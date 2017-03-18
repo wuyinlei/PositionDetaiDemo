@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="cn.com.greatchef.activity.FoodDetailActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.gradient.view.GradientScrollView
+
+            android:id="@+id/scro_observer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_food_deteil"
+                        android:layout_width="match_parent"
+                        android:layout_height="360dp"
+                        android:background="#000">
+
+                    </android.support.v4.view.ViewPager>
+
+
+                    <ImageView
+                        android:id="@+id/iv_head_detail"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="350dp"
+                        android:src="@drawable/login_logo_hdpi"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/vp_food_deteil"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toRightOf="@id/iv_head_detail"
+                        android:text="韩伟"
+                        android:textColor="#ad8748"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_position"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_name"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@id/iv_head_detail"
+                        android:text="美式主厨"
+                        android:textColor="#b4b4b4"
+                        android:textSize="10sp"/>
+
+
+                    <Button
+                        android:layout_width="64dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/vp_food_deteil"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="12dp"
+                        android:padding="5dp"
+                        android:text="关注"
+                        android:textColor="#ad8784"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="26dp"
+                    android:text="碳烤羊排配红薯溶红酒汁"
+                    android:textColor="#000000"
+                    android:textSize="17sp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="19dp"
+                    android:text="碳烤羊排配红薯溶红酒汁做法做法做法做法法做法"
+                    android:textColor="#232323"
+                    android:textSize="15sp"/>
+
+                <View
+                    android:layout_width="340dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="23dp"
+                    android:background="#979797"></View>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp">
+
+                    <ImageView
+                        android:id="@+id/iv_book"
+                        android:layout_width="13dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="21dp"
+                        android:src="@mipmap/icon_materials"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@id/iv_book"
+                        android:text="@string/material"
+                        android:textColor="#ad8748"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+
+                        android:layout_marginRight="19dp"
+                        android:src="@mipmap/icon_open"/>
+
+                </RelativeLayout>
+
+
+                <ListView
+                    android:id="@+id/lv_material"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#00000000"
+                    android:listSelector="#000000"
+                    ></ListView>
+
+                <RelativeLayout
+                    android:id="@+id/rl_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp">
+
+                    <ImageView
+                        android:id="@+id/iv_book1"
+                        android:layout_width="13dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="21dp"
+                        android:src="@mipmap/icon_step"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="14dp"
+                        android:layout_toRightOf="@id/iv_book1"
+                        android:text="@string/method"
+
+                        android:textColor="#ad8748"
+                        android:textSize="14sp"/>
+
+                    <ImageView
+                        android:layout_width="7dp"
+                        android:layout_height="12dp"
+                        android:layout_alignParentRight="true"
+
+                        android:layout_marginRight="19dp"
+                        android:src="@mipmap/icon_open"/>
+
+                </RelativeLayout>
+
+
+                <ListView
+                    android:id="@+id/lv_method"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#00000000"
+                    android:visibility="gone"></ListView>
+
+
+                <View
+                    android:layout_width="340dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="23dp"
+                    android:background="#979797"></View>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_zan_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="21dp"
+                        android:text="8"
+
+                        android:textColor="#9b9b9b"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_zan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_zan_count"
+                        android:text="@string/zan"
+                        android:textColor="#9b9b9b"
+                        android:textSize="12sp"/>
+
+                    <cn.com.greatchef.customview.HorizontialListView
+                        android:id="@+id/horizontialListView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:layout_below="@id/tv_zan_count"
+
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="14dp"
+
+
+                        >
+
+                    </cn.com.greatchef.customview.HorizontialListView>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="340dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#979797"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+
+                    <TextView
+
+                        android:id="@+id/tv_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="21dp"
+
+
+                        android:text="20"
+                        android:textColor="#9b9b9b"
+
+
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_comment"
+
+
+                        android:text="@string/comment"
+                        android:textColor="#9b9b9b"
+                        android:textSize="12sp"/>
+
+
+                </RelativeLayout>
+
+
+                <ListView
+                    android:id="@+id/lv_comment"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#00000000"></ListView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#d4d4d4"/>
+
+
+                <ListView
+                    android:id="@+id/lv_jinxuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ListView>
+
+            </LinearLayout>
+
+        </com.gradient.view.GradientScrollView>
+
+
+        <com.gradient.view.GradientActionBar
+            android:id="@+id/actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            android:background="#f11f1f">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="ActionBar"/>
+        </com.gradient.view.GradientActionBar>
+
+        <!--<RelativeLayout-->
+
+        <!--android:id="@+id/rl_title"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="#d12020"-->
+        <!--android:layout_height="50dp">-->
+
+
+        <!--</RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_gravity="bottom">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentTop="true"
+                android:background="#d4d4d4"></View>
+
+            <EditText
+                android:id="@+id/et_comment"
+                android:layout_width="192dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ccededed"
+                android:hint="@string/problems"
+                android:paddingLeft="10dp"
+                android:textSize="12sp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_comment_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="73dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/nav_info_hdpi"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="13dp"
+                    android:text="99+"
+                    android:textColor="#9b9b9b"
+                    />
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/nav_info_hdpi"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="13dp"
+                    android:text="99+"
+                    android:textColor="#9b9b9b"
+                    />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="#ccccc9"
+                android:text="@string/submit"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
